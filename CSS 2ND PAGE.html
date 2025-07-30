@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> PERSONAL DATA </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;   
+            background: linear-gradient(to bottom right,  #ff9393, #ffefec, #ffa0a0);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #fcd5ce;
+            width: 100%;
+            padding: 40px 0px;
+            box-shadow: 0 7px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            text-align: center;
+            color: #ffa1b1;
+            text-shadow: 2px 2px 3px #4b4b4b;
+        }
+
+        .form {
+            background-color: #ffe8ca;
+            width: 100%;
+            max-width: 600px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            margin-top: 50px;
+            margin-bottom: 70px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 15px;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 12px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            background-color: #ffefdf;
+        }
+        input:hover { 
+            transform: scale(1.05);
+            background: linear-gradient(to right, #fcced6, #ffafa5);}
+      
+
+        input[type="reset"] {
+            background: linear-gradient(to right, #fcced6, #ffafa5);
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        input[type="reset"]:hover {
+            transform: scale(1.05);
+            background: linear-gradient(to right, #ffd6a5, #fcd5ce);
+        }
+
+        footer {
+            background: #fcd5ce;
+            width: 100%;
+            padding: 30px 0px;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        .footer-btn-center {
+            display: inline-flex;
+            gap: 1000px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom:4px;
+            margin-top: 4px ;
+        }
+
+        .footer-btn {
+            background: linear-gradient(to right, #fcd5ce, #ffd6a5);
+            color: #333;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .footer-btn:hover {
+            transform: scale(1.05);
+            background: linear-gradient(to right, #fcced6, #ffafa5);
+
+        }
+
+        .footer-name {
+            font-size: small;
+            color: #00000083;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PERSONAL INFORMATION</h1>
+    </header>
+
+    <div class="form">
+        <form>
+            <table>
+                <tr>
+                    <td><strong>NAME</strong></td>
+                    <td><input type="text" maxlength="50"></td>
+                </tr>
+                <tr>
+                    <td><strong>ADDRESS</strong></td>
+                    <td><input type="text" maxlength="50"></td>
+                </tr>
+                <tr>
+                    <td><strong>BIRTHDATE</strong></td>
+                    <td><input type="text" maxlength="20"></td>
+                </tr>
+                <tr>
+                    <td><strong>SEX</strong></td>
+                    <td>
+                        <select>
+                            <option value="" selected disabled hidden>Select</option>
+                            <option value="MALE">MALE</option>
+                            <option value="FEMALE">FEMALE</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="reset" value="Clear"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <footer>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 80px;">
+            <a href="CSS 1ST PAGE.html" class="footer-btn">← Back</a>
+            <div style="text-align: center; flex-grow: 1;">
+                <div class="footer-name" style="font-weight: bold; color: #333333c6;">MARIE TONNY M. CASIDSID</div>
+                <div class="footer-name">DIT 2-1</div>
+            </div>
+            <a href="CSS 3RD PAGE.html" class="footer-btn">Next →</a>
+        </div>
+    </footer>
+    
+
+
+</body>
+</html>

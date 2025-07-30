@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Yahoo Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f3e8fd, #faf5ff, #e8cfff);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .login-container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      width: 380px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .login-container h2 {
+      color: #5f0f87;
+      margin-bottom: 30px;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 80%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .login-container label {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 20px;
+      justify-content: center;
+    }
+
+    .login-container input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    .signin-btn {
+      background-color: #5f0f87;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 60%;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-bottom: 15px;
+    }
+
+    .signin-btn:hover {
+      background-color: #7e1bb7;
+    }
+
+    .login-container .links a {
+      display: block;
+      margin: 5px 0;
+      color: #5f0f87;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .login-container .links a:hover {
+      text-decoration: underline;
+    }
+
+    .divider {
+      margin: 20px 0;
+      font-size: 13px;
+      color: #aaa;
+    }
+
+    .create-btn {
+      background-color: #e5e5e5;
+      color: #5f0f87;
+      padding: 10px;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      width: 60%;
+      margin-bottom: 15px;
+    }
+
+    .create-btn:hover {
+      background-color: #d2bfe8;
+    }
+
+    .social-section {
+      margin-top: 20px;
+    }
+
+    .social-label {
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .google-btn,
+    .facebook-btn {
+      padding: 8px 16px;
+      font-size: 13px;
+      font-weight: bold;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .google-btn {
+      background-color: #db4437;
+      color: white;
+    }
+
+    .google-btn:hover {
+      background-color: #c33d2f;
+    }
+
+    .facebook-btn {
+      background-color: #3b5998;
+      color: white;
+    }
+
+    .facebook-btn:hover {
+      background-color: #2d4373;
+    }
+
+    .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 30px;
+    padding: 10px 20px;
+    }
+
+    .footer-btn {
+    background: linear-gradient(to right, #cb9be2, #ffd1ec); 
+    color: #531a57;
+    font-size: 15px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    }
+
+    .footer-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #7e1bb7, #f7eee2);
+    }
+
+    .footer-name {
+    text-align: center;
+    font-size: 12px;
+    color: rgba(91, 91, 91, 0.595); 
+    font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Sign in to Yahoo!</h2>
+    <form>
+      <input type="text" placeholder="Username or number" required />
+      <input type="password" placeholder="Password" required />
+      <label><input type="checkbox" /> Keep me signed in</label>
+      <button type="submit" class="signin-btn">SIGN IN</button>
+    </form>
+
+    <div class="links">
+      <a href="#">I can't access my account</a>
+      <a href="#">Help</a>
+    </div>
+
+    <div class="divider">OR</div>
+
+    <button class="create-btn">CREATE ACCOUNT</button>
+
+    <div class="social-section">
+      <div class="social-label">Sign in with</div>
+      <div class="social-buttons">
+        <button class="google-btn">GOOGLE</button>
+        <button class="facebook-btn">FACEBOOK</button>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="footer">
+    <a href="CSS 6TH PAGE.html" class="footer-btn">← Back</a>
+  
+    <div style="text-align: center; flex-grow: 1;">
+        <div class="footer-name" style="font-weight: bold; font-size: small; color: #3333339a;">MARIE TONNY M. CASIDSID</div>
+        <div class="footer-name">DIT 2-1</div>
+    </div>
+
+    <a href="CSS.html" class="footer-btn">HOME →</a>
+  </div>
+  
+  </div>
+</body>
+</html>

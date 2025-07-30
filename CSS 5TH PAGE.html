@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TABLES</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: url('file:///C:/Users/alfre/Downloads/PUP%20BG.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        header {
+            background: linear-gradient(to right, #e6cfa3, #8b4513, #800000, #8b4513, #e6cfa3);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .header-content img {
+            height: 60px;
+            width: auto;
+        }
+
+        .header-text h2 {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            font-size: 28px;
+        }
+
+        .header-text h4 {
+            margin: 5px 0 0;
+            font-weight: normal;
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 16px;
+            color: #f8e7c9;
+        }
+
+        .content-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 450px;
+            margin: 30px auto;
+            max-width: 1400px;
+            padding: 0 30px;
+        }
+
+        main {
+            flex: 3;
+            background: linear-gradient(to left, #fae1b1, #ffffff);
+            padding: 60px;
+            border: 2px solid #e3c598;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        main h3 {
+            font-family: 'Georgia', serif;
+            color: maroon;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 2px solid #c7a96d;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background: linear-gradient(to right, #800000, #b84040);
+            color: white;
+            font-size: 16px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fcefe3;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #fdf6ea;
+        }
+
+        td:first-child {
+            font-weight: bold;
+        }
+
+        aside {
+            flex: 1;
+            border: 2px solid #e3c598;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #fff9ec;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        aside h4 {
+            font-size: 18px;
+            color: maroon;
+            font-family: 'Georgia', serif;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        aside ul li {
+            margin: 10px 0;
+        }
+
+        aside ul li a {
+            text-decoration: none;
+            color: maroon;
+            font-weight: bold;
+            background: linear-gradient(to right,  #f5bf8c, #ffecc9, #f5bf8c);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 8px 16px;
+            display: block;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        aside ul li a:hover {
+            background: linear-gradient(to right, #ffd485, #ffe0c2);
+        }
+
+        footer {
+            background: linear-gradient(to right, #e6cfa3, #8b4513, #800000, #8b4513, #e6cfa3);
+            width: 100%;
+            padding: 25px 0;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+        }
+
+        .footer-buttons a {
+            background: linear-gradient(to right, #f8e7c9, #ffeec0);
+            color: maroon;
+            padding: 10px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: 0.3s ease;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer-buttons a:hover {
+            background: linear-gradient(to right, #ffd6a5, #fcd5ce);
+            transform: scale(1.05);
+        }
+
+        .footer-center {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: #ffeec0a2;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <img src="c:\Users\alfre\Downloads\PUP logo.png" alt="PUP Logo">
+        <div class="header-text">
+            <h2>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</h2>
+            <h4>"The Country's 1st Polytechnic U"</h4>
+        </div>
+    </div>
+</header>
+
+<div class="content-wrapper">
+    <main>
+        <h3>CONTACTS</h3>
+        <table>
+            <tr>
+                <td colspan="3" style="font-weight: normal; font-style: italic; background-color: #fdf1dc;">
+                    Pureza Street, Sta. Mesa, Manila
+                </td>
+            </tr>
+            <tr>
+                <th>NAME</th>
+                <th>MOBILE NUMBER</th>
+                <th>LANDLINE</th>
+            </tr>
+            <tr>
+                <td>Mrs. Apsay</td>
+                <td>09123456789</td>
+                <td>1116666</td>
+            </tr>
+            <tr>
+                <td>Mr. Legaspi</td>
+                <td>09987654321</td>
+                <td>2225555</td>
+            </tr>
+            <tr>
+                <td>Mr. Blasquino</td>
+                <td>09543219876</td>
+                <td>3334444</td>
+            </tr>
+            <tr>
+                <td>Mrs. Bonaobra</td>
+                <td>09678912345</td>
+                <td>4443333</td>
+            </tr>
+        </table>
+    </main>
+
+    <aside>
+        <h4>ACTIVITIES</h4>
+        <hr style="border: 1px solid maroon; margin: 10px 0;">
+        <ul>
+            <li><a href="act1.html">ACT1</a></li>
+            <li><a href="act2.html">ACT2</a></li>
+            <li><a href="act3.html">ACT3</a></li>
+            <li><a href="act4.html">ACT4</a></li>
+            <li><a href="act5.html">ACT5</a></li>
+        </ul>
+    </aside>
+</div>
+
+<footer>
+    <div class="footer-buttons">
+        <a href="CSS 4TH PAGE.html">← Back</a>
+        <div class="footer-center">
+            MARIE TONNY M. CASIDSID<br>
+            <span style="font-size: small;">DIT 2-1</span>
+        </div>
+        <a href="CSS 6TH PAGE.html">Next →</a>
+    </div>
+</footer>
+
+</body>
+</html>

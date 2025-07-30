@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Using CSS Class Selector</title>
+
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #eafaff, #fcd5ce, #ffd6a5); 
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .header {
+            text-align: center;
+            color: #fffbda;
+            text-shadow: 3px 2px 5px #181515d1;
+        }
+
+        p.center {
+            text-align: center;
+            color: #fffbda;
+            text-shadow: 1px 1px 7px #181515d1;
+        }
+
+        p.large {
+            font-size: 300%;
+        }
+
+        h1, h2, p {
+            text-align: center;
+            color: #70706f;
+        }
+
+        
+        .btn-1p {
+            display: block;
+            width: fit-content;
+            margin: 40px auto;
+            padding: 12px 25px;
+            font-size: 1.2rem;
+            background: linear-gradient(to right, #fcd5ce, #ffd6a5);
+            color: #333;
+            border: none;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+            transition: all 0.3s ease;
+        }
+
+        .btn-1p:hover {
+            transform: scale(1.05);
+            background: linear-gradient(to right, #ffd6a5, #fcd5ce);
+            cursor: pointer;
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <h1 class="header">WELCOME TO THE WORLD OF CSS</h1>
+    <p class="center">This is an example of text formatted with CLASS Selector</p>
+    <br>
+
+
+    <h1 class="center">This heading has no formatting.</h1>
+    <p class="center">This paragraph applies the p.center style.</p>
+    <p class="center large">This paragraph applies the p.large style.</p>
+    <br>
+
+    <h1>Hello Students on my left!</h1>
+    <h2>Hello Students on my right!</h2>
+    <p>Hello Students on my left and right!</p>
+
+    <a href="CSS 1ST PAGE.html" class="btn-1p">Next</a>
+
+</body>
+</html>
